@@ -11,5 +11,5 @@ repositories {
 }
 
 dependencies {
-    compile "com.github.devgg:roboZen:master-SNAPSHOT"
+    compile("com.github.devgg:roboZen:master-SNAPSHOT") { changing = true }
 }
