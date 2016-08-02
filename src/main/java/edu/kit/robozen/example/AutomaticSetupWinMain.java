@@ -17,7 +17,8 @@ public class AutomaticSetupWinMain {
     private final static String monitor = "dependencies/rcssmonitor-14.1.0-win/rcssmonitor.exe";
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        Util.InitWinConfiguration initConfiguration = new Util.InitWinConfiguration(workingDirectory, log4jConfig, server, monitor);
+        Util.initLogging(log4jConfig);
+        Util.InitWinConfiguration initConfiguration = new Util.InitWinConfiguration(workingDirectory, server, monitor);
 
         Util.TeamDescription teamDescription = new Util.TeamDescription(new ChaseAndKickPolicy(), 5, new ArrayList<>());
 

@@ -20,7 +20,8 @@ public class PerPlayModePolicyMain {
     private final static String monitor = "dependencies/rcssmonitor-14.1.0-win/rcssmonitor.exe";
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        Util.InitWinConfiguration initConfiguration = new Util.InitWinConfiguration(workingDirectory, log4jConfig, server, monitor);
+        Util.initLogging(log4jConfig);
+        Util.InitWinConfiguration initConfiguration = new Util.InitWinConfiguration(workingDirectory, server, monitor);
 
         PerPlayModePolicy perPlayModePolicy = new PerPlayModePolicy(new ChaseAndKickPolicy());
         perPlayModePolicy.replacePolicyForPlayMode(new KickOffPolicy(), PlayMode.KICK_OFF_EAST, PlayMode.KICK_OFF_WEST, PlayMode.GOAL_SIDE_EAST, PlayMode.GOAL_SIDE_WEST);

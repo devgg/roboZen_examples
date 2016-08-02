@@ -23,7 +23,8 @@ public class ManualSetupMain {
     private final static String monitor = "dependencies/rcssmonitor-14.1.0-win/rcssmonitor.exe";
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        Util.initEnvironmentWin(new Util.InitWinConfiguration(workingDirectory, log4jConfig, server, monitor));
+        Util.initLogging(log4jConfig);
+        Util.initEnvironmentWin(new Util.InitWinConfiguration(workingDirectory, server, monitor));
 
         Trainer trainer = new Trainer("Trainer");
         trainer.connect();

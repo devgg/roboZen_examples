@@ -3,3 +3,7 @@
 .idea/
 build/
 .gradle/
+example_working_dir/CSVSaver.conf
+example_working_dir/incomplete.rcg
+example_working_dir/incomplete.rcl
+example_working_dir/rcssmonitor.ini
