@@ -4,11 +4,8 @@ This repository provides examples which help to get started with the roboZen lib
 The examples run out of the box with the Windows operating system.
 Users of Unix based operating systems need additional setup, described [here](#unix).
 
-##Examples
-
+##Getting started
 Currently three main classes are included in the repository.
-
-
 
 ####AutomaticSetupWinMain
 Teams are setup automatically with a basic policy.  
@@ -25,6 +22,17 @@ Teams are setup automatically with multiple policies which apply based on the cu
 Ball and players get moved automatically.  
 The game starts automatically.
 
+####Methods
+The most important methods and classes and their parameters are explained below.
+
+Method or Class | Explanation
+------------ | -------------
+Util.initLogging | Initializes the log4j logging API.
+Util.InitWinConfiguration | **Windows only** - Initializes the server and the monitor. Parameters are the server and monitor binary locations and the working directory for them to run in.
+IPolicy | Interface that descirbes a policy. A policy is the central controller of a team i.e. controls the moves the team makes. 
+Util.TeamDescription | Class that describes a team. Includes the teams policy, the number of players and the player positions.
+Util.TrainerCommand | Interface that is used to execute trainer commands before the game e.g. move the ball or position a player.
+Util.executeGameWin | **Windows only** - Executes a game includes the whole setup procedure.
 
 
 ##Windows
