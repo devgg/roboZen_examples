@@ -25,7 +25,7 @@ On Unix based operating systems additional setup is required.
 
 ##Guide
 
-Currently three main classes are included in the repository.
+Currently three main classes are included in the repository. In the following context manually means that code needs to be included for the action to be performed.
 
 ####AutomaticSetupMain
 Teams are setup automatically with a basic policy.  
