@@ -1,4 +1,4 @@
-package edu.kit.robozen.example.policy.heurisic;
+package edu.kit.robozen.example.policy;
 
 
 import edu.kit.robozen.constant.Constants;

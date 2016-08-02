@@ -5,6 +5,12 @@ apply plugin: 'java'
 
 sourceCompatibility = 1.8
 
+task execute(type:JavaExec) {
+   main = mainClass
+   classpath = sourceSets.main.runtimeClasspath
+}
+
+
 repositories {
     mavenCentral()
     maven { url "https://jitpack.io" }
