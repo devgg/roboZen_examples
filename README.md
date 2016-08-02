@@ -34,11 +34,11 @@ Util.TeamDescription | Class that describes a team. Includes the teams policy, t
 Util.TrainerCommand | Interface that is used to execute trainer commands before the game e.g. move the ball or position a player.
 Util.executeGameWin | **Windows only** - Executes a game includes the whole setup procedure.
 Team | Class representing a team. Includes the pitchside, the number of players and the teams policy.
-Team.connectAll() | Creates a thread for each player which connects to the server.
+Team.connectAll | Creates a thread for each player which connects to the server.
 Trainer | Class representing the trainer.
-Trainer.connect() | Creates a thread for the trainer which connects to the server.
-Trainer.moveBall() | Moves the ball before the game. Can only be used when the trainer is connected to the server.
-Trainer.movePlayer() | Moves a player before the game. Can only be used when trainer and player are connected to the server.
+Trainer.connect | Creates a thread for the trainer which connects to the server.
+Trainer.moveBall | Moves the ball before the game. Can only be used when the trainer is connected to the server.
+Trainer.movePlayer | Moves a player before the game. Can only be used when trainer and player are connected to the server.
 
 
 ##Windows
