@@ -9,7 +9,7 @@ import edu.kit.robozen.util.Util;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class AutomaticSetupWinMain {
+public class AutomaticSetupMain {
 
     private final static String workingDirectory = "example_working_dir";
     private final static String log4jConfig = "src/main/resources/log4j.properties";
