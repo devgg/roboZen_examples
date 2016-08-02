@@ -7,7 +7,7 @@ Users of Unix based operating systems need additional setup, described [here](#u
 ##Getting started
 Currently three main classes are included in the repository.
 
-####AutomaticSetupWinMain
+####AutomaticSetupMain
 Teams are setup automatically with a basic policy.  
 Ball and players get moved manually.  
 The game starts automatically.
