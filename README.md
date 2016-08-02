@@ -6,7 +6,7 @@ Users of Unix based operating systems need additional setup, described [here](#u
 
 ##Examples
 
-Currently the following three main classes are included in the repository.
+Currently three main classes are included in the repository.
 
 
 
@@ -28,7 +28,7 @@ The game starts automatically.
 
 
 ##Windows
-Running the examples on Windows is very straight forward. Only three commands are requiered.
+Running the examples on Windows is very straight forward. Only three commands are required.
 
 ```
 git clone git@github.com:devgg/roboZen_examples.git
@@ -38,7 +38,7 @@ gradlew -PmainClass=edu.kit.robozen.example.<MainClass> execute
 
 
 ##Unix
-On Unix based operating systems additional setup is requiered.
+On Unix based operating systems additional setup is required.
 
 1. The binaries of the robocup server and monitor need to be build for your operating system.
 2. The server and monitor need to be started manually.
