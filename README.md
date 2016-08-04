@@ -12,8 +12,12 @@ Running the examples on Windows is very straight forward. Only three commands ar
 ```
 git clone git@github.com:devgg/roboZen_examples.git
 cd roboZen_examples
-gradlew -PmainClass=edu.kit.robozen.example.<MainClass> execute
+gradlew -PmainClass=edu.kit.robozen.example.<REPLACE_WITH_THE_MAIN_CLASS_TO_USE> execute
 ```
+
+Alternatively you can clone via https: ``git clone https://github.com/devgg/roboZen_examples.git``.  
+The main classes that can be used are ``AutomaticSetupMain``, ``ManualSetupMain`` and ``PerPlayModePolicyMain``. Descriptions for these classes can be found [here](#guide).
+
 
 
 ####Unix
