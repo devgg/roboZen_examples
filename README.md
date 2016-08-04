@@ -5,7 +5,27 @@ The examples run out of the box with the Windows operating system.
 Users of Unix based operating systems need additional setup, described [here](#unix).
 
 ##Getting started
-Currently three main classes are included in the repository.
+
+####Windows
+Running the examples on Windows is very straight forward. Only three commands are required.
+
+```
+git clone git@github.com:devgg/roboZen_examples.git
+cd roboZen_examples
+gradlew -PmainClass=edu.kit.robozen.example.<MainClass> execute
+```
+
+
+####Unix
+On Unix based operating systems additional setup is required.
+
+1. The binaries of the robocup server and monitor need to be build for your operating system.
+2. The server and monitor need to be started manually.
+3. The main method can not contain any Windows specific Util methods.
+
+##Guide
+
+Currently three main classes are included in the repository. In the following context manually means that code needs to be included for the action to be performed.
 
 ####AutomaticSetupMain
 Teams are setup automatically with a basic policy.  
@@ -41,21 +61,6 @@ Trainer.moveBall | Moves the ball before the game. Can only be used when the tra
 Trainer.movePlayer | Moves a player before the game. Can only be used when trainer and player are connected to the server.
 
 
-##Windows
-Running the examples on Windows is very straight forward. Only three commands are required.
 
-```
-git clone git@github.com:devgg/roboZen_examples.git
-cd roboZen_examples
-gradlew -PmainClass=edu.kit.robozen.example.<MainClass> execute
-```
-
-
-##Unix
-On Unix based operating systems additional setup is required.
-
-1. The binaries of the robocup server and monitor need to be build for your operating system.
-2. The server and monitor need to be started manually.
-3. The main method can not contain any Windows specific Util methods.
 
 
