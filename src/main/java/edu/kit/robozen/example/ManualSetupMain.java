@@ -15,7 +15,7 @@ import java.io.IOException;
 
 public class ManualSetupMain {
 
-    private static Logger logger = Logger.getLogger(AutomaticSetupWinMain.class.getName());
+    private static Logger logger = Logger.getLogger(AutomaticSetupMain.class.getName());
 
     private final static String workingDirectory = "example_working_dir";
     private final static String log4jConfig = "src/main/resources/log4j.properties";
